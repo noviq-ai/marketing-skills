@@ -1,0 +1,40 @@
+{
+  "skill_name": "line-engagement",
+  "evals": [
+    {
+      "id": 1,
+      "title": "LINE Official Account launch strategy",
+      "prompt": "We're a D2C skincare brand launching in Japan. We want to set up a LINE Official Account to build a customer base. We have zero LINE friends. Budget is ¥50,000/month for LINE. What should we do?",
+      "expected_keywords": ["Standard", "友だち追加", "rich menu", "welcome message", "coupon", "QR code", "CPF"],
+      "expected_behavior": "Should recommend Standard plan, suggest friend acquisition methods (QR code, website CTA, LINE Ads CPF campaign), design a welcome sequence with incentive, and propose a messaging calendar appropriate for the budget."
+    },
+    {
+      "id": 2,
+      "title": "Reduce block rate",
+      "prompt": "Our LINE Official Account has 15,000 friends but our block rate is 35%. We send 2 broadcasts per week. How do we fix this?",
+      "expected_keywords": ["narrowcast", "segment", "frequency", "value", "demographic", "audience"],
+      "expected_behavior": "Should identify likely cause (too frequent or irrelevant broadcasts), recommend switching from broadcast to narrowcast with segmentation, suggest reducing frequency, and advise on content strategy that provides value."
+    },
+    {
+      "id": 3,
+      "title": "Rich menu design for restaurant",
+      "prompt": "We run a ramen restaurant chain with 5 locations in Tokyo. Design a rich menu for our LINE account.",
+      "expected_keywords": ["grid", "メニュー", "予約", "クーポン", "アクセス", "URI action"],
+      "expected_behavior": "Should propose a practical rich menu layout (e.g., 2×3 grid) with restaurant-relevant actions: today's menu, reservation, coupon, store locations, takeout order, and news/announcements."
+    },
+    {
+      "id": 4,
+      "title": "LINE Login integration for SaaS",
+      "prompt": "We have a B2C SaaS product targeting Japanese users. We want to add LINE Login to reduce signup friction and enable LINE messaging to users. How should we implement this?",
+      "expected_keywords": ["OAuth", "bot_prompt", "auto friend", "user ID", "CRM", "profile scope"],
+      "expected_behavior": "Should explain LINE Login OAuth flow, recommend bot_prompt=aggressive for auto friend add, describe how to link LINE user ID with internal user records for personalized push messages."
+    },
+    {
+      "id": 5,
+      "title": "Narrowcast campaign for seasonal sale",
+      "prompt": "We're running a summer sale for our e-commerce store. We want to send a targeted LINE message to female users aged 20-34 in Tokyo and Osaka who clicked our previous campaign. How?",
+      "expected_keywords": ["narrowcast", "demographic", "audience", "gender", "age", "region", "click retargeting"],
+      "expected_behavior": "Should explain narrowcast API with demographic filters (gender=female, age=20-34, region=Tokyo+Osaka) combined with audience filter (click retargeting from previous campaign), and recommend Flex Message format for the sale announcement."
+    }
+  ]
+}

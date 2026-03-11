@@ -1,0 +1,40 @@
+{
+  "skill_name": "ad-copy-lab",
+  "evals": [
+    {
+      "id": 1,
+      "title": "Google RSA for Japan SaaS",
+      "prompt": "Write responsive search ad headlines and descriptions for a Japanese CRM SaaS. Target: small business owners in Japan. Key value: easy to use, affordable, 14-day free trial. Price: ¥2,980/month.",
+      "expected_keywords": ["30 chars", "15 full-width", "headline", "description", "無料トライアル", "2,980", "CRM"],
+      "expected_behavior": "Should generate 8+ headlines and 4 descriptions within character limits, count characters correctly for Japanese, include mix of benefit/social proof/urgency/CTA angles, and use appropriate Japanese ad copy patterns."
+    },
+    {
+      "id": 2,
+      "title": "Meta carousel for e-commerce",
+      "prompt": "Create a Meta carousel ad for a Japanese skincare brand launching a new moisturizer. Target: women 25-40 in Japan. Price: ¥3,980. Key benefit: 72-hour moisture retention, dermatologist tested.",
+      "expected_keywords": ["1080x1080", "carousel", "primary text", "headline", "4:5", "caption", "cards"],
+      "expected_behavior": "Should specify correct Meta specs (1080x1080 for carousel), write primary text within recommendation, create distinct card concepts, and include Japanese-appropriate copy avoiding 薬機法 violation."
+    },
+    {
+      "id": 3,
+      "title": "LINE Ads creative",
+      "prompt": "Write LINE ad copy for a food delivery service in Tokyo. Campaign goal: app installs. Budget: ¥300,000/month.",
+      "expected_keywords": ["20 chars", "75 chars", "title", "description", "1200x628", "1080x1080", "friendly"],
+      "expected_behavior": "Should respect LINE's strict character limits (20 char title, 75 char description), note that title must work standalone, recommend natural/friendly tone appropriate for LINE, and provide image spec options."
+    },
+    {
+      "id": 4,
+      "title": "A/B test variations",
+      "prompt": "Our current Google ad headline is '業務効率化ツール | 無料で始める'. CTR is 2.1% which is below target. Generate A/B test variations.",
+      "expected_keywords": ["variation", "headline", "test", "benefit", "specific", "number", "social proof"],
+      "expected_behavior": "Should analyze why current headline may underperform (generic, no specificity), generate multiple variations using different angles (benefit, social proof, urgency, question), and recommend testing one element at a time."
+    },
+    {
+      "id": 5,
+      "title": "Japan legal compliance check",
+      "prompt": "Review this ad copy for a Japanese supplement brand: '飲むだけで痩せる！業界No.1のダイエットサプリ。今だけ特別価格で販売中。'",
+      "expected_keywords": ["薬機法", "景品表示法", "効能", "No.1", "根拠", "課徴金"],
+      "expected_behavior": "Should flag multiple legal issues: 薬機法 violation (飲むだけで痩せる = efficacy claim for supplement), 景品表示法 violation (業界No.1 without evidence, 今だけ特別価格 if always discounted), and suggest compliant alternatives."
+    }
+  ]
+}

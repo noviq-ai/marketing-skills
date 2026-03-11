@@ -1,0 +1,40 @@
+{
+  "skill_name": "social-posts",
+  "evals": [
+    {
+      "id": 1,
+      "title": "X thread for SaaS launch",
+      "prompt": "We're launching a new project management SaaS for small teams in Japan. Write an X thread to announce the launch and explain key features. Target: startup founders and small business owners.",
+      "expected_keywords": ["thread", "280 chars", "hook", "feature", "CTA", "hashtag"],
+      "expected_behavior": "Should create a 5-10 post thread with a strong hook in post 1, each post within 280 chars, mix of features and benefits, end with CTA, and include 1-2 relevant Japanese hashtags."
+    },
+    {
+      "id": 2,
+      "title": "Instagram content calendar for bakery",
+      "prompt": "Create a 1-week Instagram content calendar for a small bakery in Tokyo. They post daily and have good photos of their products.",
+      "expected_keywords": ["Reel", "carousel", "Stories", "1080", "hashtag", "posting time"],
+      "expected_behavior": "Should create a varied weekly plan mixing feed posts, Stories, and Reels with appropriate formats and specs, suggest posting times for Japan, and include content mix (product, behind-the-scenes, educational)."
+    },
+    {
+      "id": 3,
+      "title": "TikTok strategy for fashion brand",
+      "prompt": "We're a Japanese streetwear brand targeting 18-25 year olds. We've never used TikTok. How should we start?",
+      "expected_keywords": ["trending", "sound", "9:16", "15-60 sec", "hook", "trend"],
+      "expected_behavior": "Should recommend starting with trend participation, explain video specs, suggest content patterns (styling tips, behind-the-scenes, before/after), emphasize trending audio importance, and provide frequency recommendation."
+    },
+    {
+      "id": 4,
+      "title": "B2B LinkedIn strategy for Japan",
+      "prompt": "We sell HR software to Japanese enterprises. Our LinkedIn page has 200 followers. What should we post to build credibility and generate leads?",
+      "expected_keywords": ["thought leadership", "personal", "B2B", "3000 chars", "document", "Japanese"],
+      "expected_behavior": "Should note LinkedIn's small but growing Japan market (~4M), recommend personal posts from founders/executives over company page posts, suggest content pillars (HR insights, data, customer stories), and note that Japanese language posts are appropriate."
+    },
+    {
+      "id": 5,
+      "title": "Seasonal content for Golden Week",
+      "prompt": "Golden Week is coming up. What social media content should we prepare for our travel agency targeting Japanese domestic travelers?",
+      "expected_keywords": ["GW", "旅行", "hashtag", "Reels", "Instagram", "X", "advance"],
+      "expected_behavior": "Should recommend starting content 2-3 weeks before GW, suggest platform-specific content (Instagram Reels of destinations, X threads with travel tips), include relevant seasonal hashtags, and note posting schedule adjustments during the holiday."
+    }
+  ]
+}

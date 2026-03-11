@@ -1,0 +1,88 @@
+{
+  "skill_name": "ga4-measurement",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Help me set up analytics for our B2B SaaS. We use GA4 and GTM. We want to track signups, feature usage, and plan upgrades. Our currency is JPY.",
+      "expected_output": "Should check for product-marketing-context.md first. Should ask what decisions the tracking will inform. Should propose a tracking plan with object_action naming convention. Should include SaaS-relevant events: signup_completed, onboarding_step_completed, feature_used, purchase_completed. Should specify JPY as currency with integer values. Should provide both gtag.js and GTM data layer examples. Should recommend marking key events as conversions.",
+      "assertions": [
+        "Checks for product-marketing-context.md",
+        "Asks what business decisions the data will drive",
+        "Uses object_action naming convention with underscores",
+        "Defines SaaS-relevant events (signup, feature usage, upgrade)",
+        "Uses JPY currency with integer values",
+        "Provides implementation code examples",
+        "Outputs a structured tracking plan"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What UTM conventions should we use? We run Google Ads, Meta Ads, LINE Ads, send a weekly newsletter, and post on X organically.",
+      "expected_output": "Should define consistent UTM naming: source (google, meta, line, newsletter, x), medium (cpc, paid-social, email, organic-social), campaign (descriptive with date or quarter). Should provide specific UTM examples for all five channels including LINE. Should enforce lowercase-only rule. Should recommend maintaining a UTM spreadsheet. Should warn about common mistakes like inconsistent casing or missing medium values.",
+      "assertions": [
+        "Defines source, medium, and campaign for all five channels",
+        "Includes LINE as a source (Japan-relevant channel)",
+        "All examples are lowercase",
+        "Provides specific full UTM URL examples",
+        "Recommends a tracking spreadsheet",
+        "Warns about common naming mistakes"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our GA4 numbers don't match our database. We see duplicate events and conversion counts are off. What's going on?",
+      "expected_output": "Should systematically diagnose: check for duplicate GTM tags, verify trigger conditions aren't too broad, check conversion counting method (once vs every), check consent mode filtering. Should recommend specific tools: GA4 DebugView, GTM Preview, Chrome DevTools Network tab. Should explain common causes of GA4 vs database mismatches: ad blockers, consent denial, client-side vs server-side, session timeout, sampling in reports.",
+      "assertions": [
+        "Checks for duplicate tag firing",
+        "Checks conversion counting method",
+        "Recommends DebugView and GTM Preview",
+        "Explains GA4 vs database mismatch causes",
+        "Provides systematic troubleshooting steps",
+        "Does not just guess — asks clarifying questions"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We're launching a Japanese e-commerce site and need to set up GA4 tracking from scratch. What events do we need?",
+      "expected_output": "Should recommend Google's standard e-commerce event names (view_item, add_to_cart, begin_checkout, purchase) because they unlock built-in reports. Should include the full funnel sequence. Should specify JPY as currency with integer values. Should recommend keeping total events under 500 and starting with 15-25 meaningful ones. Should include the ecommerce object clear pattern before each push.",
+      "assertions": [
+        "Uses Google's recommended e-commerce event names",
+        "Defines the complete purchase funnel sequence",
+        "Specifies JPY with integer values",
+        "Recommends event budget (15-25 meaningful events)",
+        "Includes ecommerce null clear pattern",
+        "Prioritizes events by importance"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Do we need a cookie consent banner for our Japanese website that uses GA4? We also run Google Ads remarketing.",
+      "expected_output": "Should distinguish between GA4 analytics-only and GA4 + Google Ads remarketing. GA4 first-party cookies alone do not require consent under Japanese APPI. However, using GA4 audience lists for Google Ads remarketing does require consent. Should mention the Telecommunications Business Act external transmission rules if applicable. Should recommend Consent Mode v2 as best practice for Google Ads users. Should provide a practical implementation approach.",
+      "assertions": [
+        "Distinguishes GA4-only vs GA4 + Ads remarketing",
+        "States GA4 first-party cookies are not regulated under APPI",
+        "States remarketing audiences require consent",
+        "Mentions Telecommunications Business Act external transmission rules",
+        "Recommends Consent Mode v2 for Ads users",
+        "Provides practical next steps"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Help me set up tracking for an A/B test on our pricing page. We want to measure which version converts better.",
+      "expected_output": "Should recognize this overlaps with the ab-test-setup skill. Should defer to ab-test-setup for experiment design, hypothesis, sample size, and statistical analysis. Can help with the tracking implementation side (what events to fire, what parameters to include) but should clearly recommend using ab-test-setup for the experiment framework.",
+      "assertions": [
+        "Recognizes overlap with ab-test-setup skill",
+        "Defers to ab-test-setup for experiment design",
+        "May help with tracking-specific implementation",
+        "Does not attempt to design the full experiment"
+      ],
+      "files": []
+    }
+  ]
+}

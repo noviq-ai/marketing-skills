@@ -1,0 +1,73 @@
+{
+  "skill_name": "ad-campaign-ops",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a B2B SaaS company launching in Japan with a ¥500,000/month ad budget. Where should we spend it?",
+      "expected_output": "Should check for product-marketing-context.md. Should recommend a budget allocation across platforms, prioritizing Google Search for high-intent capture. Should mention Yahoo Ads as important for Japan's older demographics. Should discuss whether LINE Ads makes sense for B2B. Should provide a concrete allocation with rationale, not just general advice.",
+      "assertions": [
+        "Checks for product-marketing-context.md",
+        "Provides specific budget allocation with JPY amounts",
+        "Recommends Google Search as primary for B2B high-intent",
+        "Addresses Yahoo Ads for Japan market",
+        "Discusses LINE Ads relevance for B2B",
+        "Includes scaling rules or next steps"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Help me set up Google Ads for the Japanese market. I've never run ads in Japan before.",
+      "expected_output": "Should cover Japan-specific setup: Japanese ad copy character limits, keyword match type strategy for Japanese, negative keyword categories (無料, 求人, とは), and why dual-platform (Google + Yahoo) matters. Should recommend starting with exact/phrase match. Should address Smart Bidding requirements (30+ conversions).",
+      "assertions": [
+        "Covers Japanese character limits for ad copy",
+        "Recommends keyword match type strategy",
+        "Includes Japanese negative keyword categories",
+        "Mentions dual-platform strategy with Yahoo",
+        "Addresses Smart Bidding conversion requirements",
+        "Provides campaign structure recommendation"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Should we run LINE Ads? We're an e-commerce brand selling skincare products to Japanese women in their 20s-30s.",
+      "expected_output": "Should strongly recommend LINE Ads for this use case (B2C, mass-market, Japan, target demographic). Should detail LINE's reach (95M+ users), ad formats suitable for skincare (image, video, carousel), targeting options (demographic, interest, lookalike). Should also mention Instagram as complementary. Should provide practical setup steps.",
+      "assertions": [
+        "Recommends LINE Ads for this B2C use case",
+        "Cites LINE's Japan reach (95M+ users)",
+        "Recommends specific ad formats for skincare",
+        "Details relevant targeting options",
+        "Mentions Instagram as complementary platform",
+        "Provides practical next steps"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our Google Ads CPA is too high. We're spending ¥300,000/month but only getting 5 conversions. How do we fix this?",
+      "expected_output": "Should diagnose systematically: check conversion tracking accuracy, review search terms for irrelevant clicks, audit negative keywords, evaluate keyword match types, check landing page relevance, review Quality Score. Should calculate current CPA (¥60,000) and discuss whether this is viable for the business. Should NOT just recommend increasing budget.",
+      "assertions": [
+        "Calculates current CPA",
+        "Checks conversion tracking accuracy first",
+        "Reviews search terms and negative keywords",
+        "Evaluates Quality Score and landing page",
+        "Provides systematic optimization steps",
+        "Does not default to 'increase budget'"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Write Google Ads copy for our project management tool targeting Japanese businesses.",
+      "expected_output": "Should recognize this overlaps with the ad-creative skill. Should provide basic ad copy guidance (headlines, descriptions within character limits) but defer to ad-creative for bulk creative generation and iteration.",
+      "assertions": [
+        "Recognizes overlap with ad-creative skill",
+        "Provides basic ad copy within Japanese character limits",
+        "Defers to ad-creative for comprehensive creative work",
+        "Includes Japanese trust signals in copy examples"
+      ],
+      "files": []
+    }
+  ]
+}

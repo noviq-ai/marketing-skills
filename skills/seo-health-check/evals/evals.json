@@ -1,0 +1,75 @@
+{
+  "skill_name": "seo-health-check",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our organic traffic dropped 30% last month. We're a Japanese SaaS company with a .co.jp domain. Can you help figure out what happened?",
+      "expected_output": "Should check for product-marketing-context.md. Should ask for Search Console access and data. Should systematically diagnose: check for Google algorithm updates, manual actions, indexing issues, Core Web Vitals regressions, content changes, and technical issues. Should prioritize investigation by likelihood. Should not guess without data.",
+      "assertions": [
+        "Checks for product-marketing-context.md",
+        "Asks for Search Console data",
+        "Checks for recent Google algorithm updates",
+        "Investigates indexing and crawl issues",
+        "Checks Core Web Vitals",
+        "Provides systematic diagnosis framework"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're launching a new site targeting Japanese users. What SEO setup do we need from day one?",
+      "expected_output": "Should cover technical foundation: .jp or .co.jp domain recommendation, UTF-8 encoding, hreflang setup if multilingual, XML sitemap, robots.txt, Search Console setup. Should address Japanese keyword research across hiragana/katakana/kanji variations. Should mention mobile-first priority (90% mobile users). Should recommend E-E-A-T signals. Should NOT just list generic SEO advice.",
+      "assertions": [
+        "Recommends .jp or .co.jp domain",
+        "Addresses Japanese writing system keyword variations",
+        "Emphasizes mobile-first (90% mobile stat)",
+        "Covers technical setup checklist",
+        "Mentions E-E-A-T for Japan",
+        "Recommends hreflang if multilingual"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Run an SEO audit on our marketing site. It's built with Next.js and we're getting very little organic traffic.",
+      "expected_output": "Should follow the audit framework: technical first, then on-page, then off-page. For Next.js specifically, should check SSR/SSG rendering for Googlebot, client-side routing issues, meta tag generation, hydration CLS. Should provide structured output with critical issues, warnings, and opportunities. Should ask for Search Console access.",
+      "assertions": [
+        "Follows technical > on-page > off-page audit order",
+        "Addresses Next.js-specific SEO issues",
+        "Checks SSR rendering for Googlebot",
+        "Provides structured audit output format",
+        "Asks for Search Console access",
+        "Prioritizes issues by impact"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I want to do keyword research for our project management tool targeting the Japanese market. Where do I start?",
+      "expected_output": "Should address the three writing systems and keyword variation challenge. Should recommend tools: Google Keyword Planner (location Japan), Ahrefs (Japanese database), SEMrush. Should explain how to map keyword variations across hiragana/katakana/kanji. Should consider search intent and long-tail patterns common in Japanese. Should recommend competitor SERP analysis for the target market.",
+      "assertions": [
+        "Explains three writing systems and keyword variation challenge",
+        "Recommends specific tools for Japanese keyword research",
+        "Covers search intent analysis",
+        "Mentions long-tail keyword patterns in Japanese",
+        "Suggests competitor analysis approach",
+        "Provides actionable next steps"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Should we also optimize for Yahoo Japan or just focus on Google?",
+      "expected_output": "Should explain that Yahoo Japan uses Google's algorithm so optimizing for Google covers Yahoo Japan. Should note the differences: Yahoo ecosystem integration (Yahoo News, Shopping), different user demographics (older, mainstream), Yahoo JAPAN app popularity. Should provide practical advice for Yahoo-specific opportunities without overinvesting.",
+      "assertions": [
+        "States Yahoo Japan uses Google's algorithm",
+        "Recommends focusing on Google as primary",
+        "Notes Yahoo-specific ecosystem differences",
+        "Mentions user demographic differences",
+        "Provides practical Yahoo-specific opportunities",
+        "Does not recommend duplicating effort"
+      ],
+      "files": []
+    }
+  ]
+}

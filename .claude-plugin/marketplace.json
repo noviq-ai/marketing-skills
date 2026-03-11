@@ -1,0 +1,27 @@
+{
+  "name": "marketing-skills",
+  "owner": {
+    "name": "Noviq"
+  },
+  "metadata": {
+    "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, and growth",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "marketing-skills",
+      "description": "Marketing skills for technical marketers and founders: CRO, copywriting, cold email, SEO, AI SEO, paid ads, ad creative, churn prevention, pricing strategy, referral programs, revenue operations, sales enablement, and more",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ga4-measurement",
+        "./skills/ga4-analysis",
+        "./skills/seo-health-check",
+        "./skills/ad-campaign-ops",
+        "./skills/line-engagement",
+        "./skills/social-posts",
+        "./skills/ad-copy-lab"
+      ]
+    }
+  ]
+}

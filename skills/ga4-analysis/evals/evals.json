@@ -1,0 +1,40 @@
+{
+  "skill_name": "ga4-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "title": "Traffic drop diagnosis",
+      "prompt": "Our B2B SaaS site traffic dropped 40% this week compared to last week. We're based in Japan. It's the first week of May. What should I check?",
+      "expected_keywords": ["Golden Week", "seasonality", "B2B", "tracking", "Realtime", "compare"],
+      "expected_behavior": "Should immediately identify Golden Week as the most likely cause for a B2B site, then provide a systematic diagnostic checklist starting with seasonality check before investigating technical issues."
+    },
+    {
+      "id": 2,
+      "title": "Channel performance analysis",
+      "prompt": "I want to understand which marketing channels are driving the most value. We run Google Ads, LINE Ads, and organic SEO. Can you help me analyze?",
+      "expected_keywords": ["sessionDefaultChannelGroup", "source", "medium", "conversions", "engagement", "ROAS", "CPA"],
+      "expected_behavior": "Should recommend channel-level analysis using sessionDefaultChannelGroup, then drill into source/medium. Should explain session-scoped vs first-user-scoped dimensions for proper attribution."
+    },
+    {
+      "id": 3,
+      "title": "Funnel analysis for e-commerce",
+      "prompt": "We have an e-commerce site selling Japanese crafts. Our add-to-cart rate is decent but purchase completion is low. Help me analyze the checkout funnel.",
+      "expected_keywords": ["Funnel Exploration", "closed funnel", "drop-off", "device", "segment", "checkout"],
+      "expected_behavior": "Should recommend Funnel Exploration with closed funnel type, suggest segmenting by device and channel, and provide specific steps to identify where drop-off occurs."
+    },
+    {
+      "id": 4,
+      "title": "Monthly report creation",
+      "prompt": "My CEO wants a monthly marketing report. What should I include and how should I structure it?",
+      "expected_keywords": ["KPI", "channel", "trend", "action", "comparison", "executive"],
+      "expected_behavior": "Should provide a structured report template with executive summary, key metrics with period comparison, channel ROI, funnel analysis, and actionable recommendations. Should emphasize insights over raw data."
+    },
+    {
+      "id": 5,
+      "title": "Attribution model comparison",
+      "prompt": "We spend ¥2M/month on ads across Google and Meta. How do I know which channel actually drives conversions? GA4 shows different numbers depending on where I look.",
+      "expected_keywords": ["Data-Driven Attribution", "last click", "Model Comparison", "400 conversions", "session-scoped", "first-user"],
+      "expected_behavior": "Should explain DDA vs last-click, mention the 400 conversion threshold for DDA to work, recommend Model Comparison report, and explain session vs first-user scoped dimension differences."
+    }
+  ]
+}
